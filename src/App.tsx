@@ -1,11 +1,13 @@
-import render from "src";
+
 import "./main.css";
+import Navigation from "./navigation/Navigation";
 
 function App(){
 	const name = "Secret Moonwolves";
 	return (
 		<div>
-			<h1 onClick={()=>{render(<h2>Clicked</h2>)}}>{name}</h1>
+			<Navigation/>
+			<h1>{name}</h1>
 		</div>
 	)
 };
