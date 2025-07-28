@@ -11,6 +11,10 @@ const navigationConfig:Record<ENavigation,JSX.Element> = {
 	[ENavigation.NEWGAME]: <NewGame/>,
 };
 
+export function refresh(){
+	renderPath();
+}
+
 
 export function renderPath() {
 
